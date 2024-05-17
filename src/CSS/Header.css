@@ -1,0 +1,95 @@
+header {
+  background: linear-gradient(45deg, #f5f5dc 0%, #8b4513 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+  position: sticky;
+  top: 0; /* Stick to the top of the page */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+.logo-name {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  color: #070707;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;                   /* Adjust the text color as needed */
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px; /* Adjust the spacing between the logo and the text */
+}
+
+.logo:hover,
+.logo:focus {
+  color: #cda102; /* Darker shade of yellow for hover and focus */
+}
+
+.logo NavLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fffefe;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #fff;
+  background-color: #f9c802; /* Yellow background for hover and focus */
+  transform: translateY(-3px); /* Slight lift effect */
+  border-radius: 2px; /* Rounded corners for aesthetic */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center; /* Center align the navigation items */
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%; /* Full width for tap targets on mobile */
+  }
+}

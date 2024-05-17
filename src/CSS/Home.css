@@ -1,0 +1,48 @@
+/* Home.css */
+
+.parallax {
+  /* The background image */
+  background-image: url("../Images/travel.jpg");
+
+  /* Set up the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Set the height of the parallax container */
+  min-height: 500px;
+
+  /* Center the content inside the parallax */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-card-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background: #ffffff1f;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  margin-bottom: 70px;
+  /* Transition for smooth color change */
+  transition: background 0.5s, box-shadow 0.5s;
+}
+
+.search-card-container:hover {
+  /* Gradient background on hover */
+   background: #fff;
+
+  /* Increase the size of the box-shadow for more depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.bus-name{
+  background-color: rgba(245, 245, 220, 0.549);
+  border-radius: 20px;
+  color: black;
+}
+
+/* ... rest of your CSS ... */

@@ -1,0 +1,168 @@
+/* Main card styling */
+.search-container {
+    display:block;
+    justify-content:right; /* Aligns the child element(s) to the end (right side) */
+    padding: 20px;
+  }
+
+  .search-card {
+    /* Example of a more vibrant gradient */
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+  
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 170px;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  /* Label styling */
+  .label,
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Input and select styling */
+  .select,
+  .input,
+  .form-group select,
+  .form-group input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  /* Search button styling */
+  .search-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .bus-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-bottom: 50px;
+      margin-top: 30px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .bus-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .bus-card-header {
+      background-color: #3498db;
+      padding: 15px 20px;
+      color: #fff;
+    }
+    
+    .bus-name {
+      margin: 0;
+      font-size: 1.25em;
+      font-weight: bold;
+    }
+    
+    .bus-card-body {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .bus-info p {
+      margin: 5px 0;
+      color: #34495e;
+    }
+    
+    .bus-price {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+    
+    .book-button {
+      background-color: #2ecc71;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 25px;
+      cursor: pointer;
+      font-size: 0.9em;
+      font-weight: bold;
+      transition: background-color 0.2s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .book-button:hover {
+      background-color: #27ae60;
+    }
+    
+    /* Additional styles to enhance the layout and typography */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #ecf0f1;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type='date'],
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+    .image-section {
+      width: 500px; /* Set the width of the container to 500px */
+      height: 500px; /* Set the height of the container to 500px */
+      overflow: hidden; /* Prevents any overflow from the image */
+    }
+    
+    .home-image {
+      width: 100%; /* Makes the image fill the container width */
+      height: 100%; /* Makes the image fill the container height */
+      object-fit: cover; /* Ensures the image covers the area without stretching */
+      object-position: left; /* Aligns the image to the left */
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .bus-card-body {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .book-button {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+    
